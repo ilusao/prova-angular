@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class ProvaangularComponent {
   reais : number = 0;
   dolar : number = 0;
+  euro : number = 0;
   converte : number = 0;
   converte2 : number = 0;
   converte3 : number = 0;
@@ -15,6 +16,7 @@ export class ProvaangularComponent {
   converter(){
      this.converte = this.reais / 5;
      this.converte2 = this.dolar * 5;
+     this.converte3 = this.euro * 5,51;
   }
 
 }
