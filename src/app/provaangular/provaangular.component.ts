@@ -13,7 +13,8 @@ export class ProvaangularComponent {
   converte3 : number = 0;
 
   converter(){
-     this.converte
+     this.converte = this.reais / 5;
+     this.converte2 = this.dolar * 5;
   }
 
 }

@@ -1,28 +1,41 @@
 <p>Bom dia &#128512;</p>
+
 <form>
   <h1>conversor de moedas, reias para dolar</h1>
   <input type="number" name="reais"  [(ngModel)]="reais">
-   é....
-  <input type="number" name="dolar" [(ngModel)]="dolar">
-  <button (click)="converte">converter</button>
-  <input>
+  <button (click)="converter()">converter</button>
+  <input [value]="converte">
+  <br>
   Dividir a quantia pela cotação da moeda no dia <br>
   O Valor da cotação do Dólar: US$ 1 = R$ 5. <br>
-  
+  Cálculo vai se: REAIS / 5.<br>
+
+
+
+
+
+  <h2>conversor, Dolar para Reais</h2>
+  <input type="number" name="dolar" [(ngModel)]="dolar">
+  <button (click)="converter()">converter</button>
+  <input [value]="converte2">
   <br>
-  <h2>conversor</h2>
+  MUltiplica a quantia pela cotação da moeda no dia <br>
+  O Valor da cotação do Real: R$ 5 = US$ 1  <br>
+  Cálculo vai se: DOLAR * 5.<br>
+
+
+
+
+
+  <h3>conversor, Peso cubano para guarani</h3>
   <input type="number" name="reais"  [(ngModel)]="reais">
    é....
   <input type="number" name="dolar" [(ngModel)]="dolar">
   <button (click)="converte">converter</button>
   <input>
   <br>
-  <h3>conversor</h3>
-  <input type="number" name="reais"  [(ngModel)]="reais">
-   é....
-  <input type="number" name="dolar" [(ngModel)]="dolar">
-  <button (click)="converte">converter</button>
-  <input>
-  <br>
+  MUltiplica a quantia pela cotação da moeda no dia <br>
+  O Valor da cotação do Real: R$ 5 = US$ 1  <br>
+  Cálculo vai se: DOLAR * 5.<br>
 
 </form>
