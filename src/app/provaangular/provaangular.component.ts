@@ -12,11 +12,13 @@ export class ProvaangularComponent {
   converte : number = 0;
   converte2 : number = 0;
   converte3 : number = 0;
+  cotacao : number = 0;
 
   converter(){
-     this.converte = this.reais / 5;
+     this.converte = this.reais / this.cotacao;
      this.converte2 = this.dolar * 5;
      this.converte3 = this.euro * 5,51;
+
   }
 
 }

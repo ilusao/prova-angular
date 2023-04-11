@@ -1,32 +1,37 @@
-<p>Bom dia &#128512;</p>
-<form>
-
+<form style="text-align: center;">
 
   <h1>conversor de moedas, reias para dolar</h1>
+  digite  a cotacao do dolar
+  <input type="number" name="cotacao"  [(ngModel)]="cotacao">
+  <br><br>
   <input type="number" name="reais"  [(ngModel)]="reais">
   <button (click)="converter()">converter</button>
   <input [value]="converte">
   <br>
+  Exemplo
+  <br>
   Dividir a quantia pela cotação da moeda no dia <br>
   O Valor da cotação do Dólar: US$ 1 = R$ 5. <br>
-  Cálculo vai se: REAIS / 5.<br>
-
-
+  Cálculo vai se: REAIS / 5.<br><br><br><br><br>
 
 
   <input type="number" name="dolar" [(ngModel)]="dolar">
   <button (click)="converter()">converter</button>
   <input [value]="converte2">
   <br>
+  Exemplo
+  <br>
   MUltiplica a quantia pela cotação da moeda no dia <br>
   O Valor da cotação do Real: R$ 5 = US$ 1  <br>
-  Cálculo vai se: DOLAR * 5.<br>
+  Cálculo vai se: DOLAR * 5.<br><br><br><br><br><br><br>
 
 
     <h3></h3>
   <input type="number" name="euro" [(ngModel)]="euro">
   <button (click)="converter()">converter</button>
   <input [value]="converte3">
+  <br>
+  Exemplo
   <br>
   MUltiplica a quantia pela cotação da moeda no dia <br>
   O Valor da cotação do Real: EUR 1 =R$ 5,51 <br>
